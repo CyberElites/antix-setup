@@ -37,14 +37,21 @@ mv ~/Downloads/nvim ~/.config
 sudo ln -s /usr/local/bin/nvim-linux64/bin/nvim /usr/local/bin/nvim
 
 ## Manual Steps - By Commands:
-# 1. cd ~/.config/nvim
-# 2. nvim init.lua
-# 3. :source %
-# 4. :PackerSync
-# 5. :wqa
-# 6. cd ~/.config/nvim/lua/core/plugin_config
-# 7. nvim init.lua
-# 8. :source %
-# 9. :PackerSync
-# 10. :wqa
-# 11. reboot
+# Linux Commands:
+# 1. nvim ~/.config/nvim/init.lua
+
+# Nvim Commands:
+# 2. :source %
+# 3. :PackerSync
+# 4. :wqa
+
+# Linux Commands:
+# 5. nvim ~/.config/nvim/lua/core/plugin_config/init.lua
+
+# Nvim Commands:
+# 6. :source %
+# 7. :PackerSync
+# 8. :wqa
+
+# Linux Commands:
+# 9. reboot
