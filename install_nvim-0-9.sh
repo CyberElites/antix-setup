@@ -26,9 +26,6 @@ curl -o ~/.local/share/fonts/Arimo.zip -L https://github.com/ryanoasis/nerd-font
 #Unzip font
 unzip ~/.local/share/fonts/Arimo.zip
 
-#Remove zip
-rm -r ~/.local/share/fonts/Arimo.zip
-
 #Refresh fonts cache
 fc-cache -fv
 
