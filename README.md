@@ -1,2 +1,2 @@
-# Automatic Configurations for Neovim v9 - Simple
+## Automatic Configurations for Neovim v0.9.0 - Simple
 Run
