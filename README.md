@@ -15,7 +15,7 @@ Go Into Repository and Execute "install_nvim-0-9.sh"
 cd ~/Downloads/nvim && chmod +x install_nvim-0-9.sh && bash ./install_nvim-0-9.sh
 ```
 
-After those we have to do a few manual steps:
+On some systems the updates might not works. If so, follow these commands:
 ```
 Linux Commands:
 1. nvim ~/.config/nvim/init.lua
