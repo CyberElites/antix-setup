@@ -1,2 +1,4 @@
 ## Automatic Configurations for Neovim v0.9.0 - Simple
-Run
+
+Clone Repository to Downloads:
+`git clone https:`
