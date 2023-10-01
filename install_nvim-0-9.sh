@@ -34,7 +34,7 @@ fc-cache -fv
 mv ~/Downloads/nvim ~/.config
 
 # Create a symbolic link to nvim binary
-sudo ln -s /usr/local/bin/nvim-linux64/bin/nvim ./usr/local/bin/nvim
+sudo ln -s /usr/local/bin/nvim-linux64/bin/nvim /usr/local/bin/nvim
 
 ## Manual Steps - By Commands:
 # 1. cd ~/.config/nvim
