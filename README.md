@@ -1,5 +1,10 @@
 ## Automatic Configurations for Neovim v0.9.0 - Simple
 
+First, make sure you have Neovim uninstalled:
+```
+sudo apt remove neovim -y
+```
+
 Clone Repository to Downloads:
 ```
 git clone https://github.com/CyberElites/nvim.git && mv nvim ~/Downloads/
