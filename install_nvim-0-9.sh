@@ -12,7 +12,7 @@ curl -o ~/Downloads/nvim-linux64.tar.gz -L https://github.com/neovim/neovim/rele
 sudo mv ~/Downloads/nvim-linux64.tar.gz /usr/local/bin
 
 # Extract the tar.gz file
-sudo tar xzvf /usr/local/bin/nvim-linux64.tar.gz
+sudo tar xzvf /usr/local/bin/nvim-linux64.tar.gz -C /usr/local/bin
 
 # Create a symbolic link to nvim binary
 sudo ln -s /usr/local/bin/nvim-linux64/bin/nvim ./nvim
@@ -24,7 +24,7 @@ mkdir ~/.local/share/fonts
 curl -o ~/.local/share/fonts/Arimo.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Arimo.zip
 
 #Unzip font
-unzip ~/.local/share/fonts/Arimo.zip
+unzip -d ~/.local/share/fonts ~/.local/share/fonts/Arimo.zip
 
 #Refresh fonts cache
 fc-cache -fv
