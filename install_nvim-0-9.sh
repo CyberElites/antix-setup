@@ -2,8 +2,9 @@
 
 #--- Setup Nvim and Fonts
 
-#Download curl if not already
+#Download necessary commands if not already
 sudo apt install curl -y
+sudo apt install npm -y
 
 # Download nvim-linux64.tar.gz from the URL and move it to ~/Downloads
 curl -o ~/Downloads/nvim-linux64.tar.gz -L https://github.com/neovim/neovim/releases/download/v0.9.0/nvim-linux64.tar.gz
