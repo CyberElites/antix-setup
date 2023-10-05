@@ -34,7 +34,8 @@ Nvim Commands:
 8. :wqa
 
 Linux Commands:
-9. reboot
+9. sudo apt-get update && sudo apt-get upgrade
+10. reboot
 ```
 
 ## Conclusion
