@@ -19,7 +19,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 chmod u+x nvim.appimage
 
 # Move appimage to /usr/local/bin
-mv nvim.appimge /usr/local/bin
+mv nvim.appimge /usr/local/bin/nvim.appimage
 
 #Create font directory
 mkdir ~/.local/share/fonts
@@ -37,4 +37,4 @@ fc-cache -fv
 sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
 
 # Echo important tips
-echo "\n\nIt would be advised to run nvim and then restart your system afterwards."
+echo "It would be advised to run nvim and then restart your system afterwards."
