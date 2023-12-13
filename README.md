@@ -4,7 +4,7 @@
 
 Clone Repository to Downloads:
 ```
-git clone https://github.com/CyberElites/nvim.git
+git clone https://github.com/CyberElites/nvim.git && mv nvim /home/$USER
 ```
 
 Go Into Repository and Execute "install_nvim-0-9.sh"
