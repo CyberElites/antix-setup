@@ -22,16 +22,33 @@ chmod u+x nvim.appimage
 mv nvim.appimge /usr/local/bin/nvim.appimage
 
 #Create font directory
-mkdir ~/.local/share/fonts
+if [! -d "/home/$USER/.local/share/fonts"]; then
+    mkdir ~/.local/share/fonts
+fi
 
-#Install Arimo Nerd Font
-curl -o ~/.local/share/fonts/Arimo.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Arimo.zip
+# --- Ask User if they Want Font File
 
-#Unzip font
-unzip -d ~/.local/share/fonts ~/.local/share/fonts/Arimo.zip
+while true; do
+    echo "Do you want to add a specific font to '~/.local/share/fonts'? (yes/no) "
+    read answer
 
-#Refresh fonts cache
-fc-cache -fv
+    if ["$answer" = "yes"] || ["$answer" = "y"]; then
+        #Install Arimo Nerd Font
+        curl -o ~/.local/share/fonts/Arimo.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Arimo.zip
+
+        #Unzip font
+        unzip -d ~/.local/share/fonts ~/.local/share/fonts/Arimo.zip
+
+        #Refresh fonts cache
+        fc-cache -fv
+
+        break
+    elif [ "$answer" = "no" ] || [ "$answer" = "n" ]; then
+        break
+    else
+        echo "Please enter a valid response (yes/no)."
+    fi
+done
 
 # Create a symbolic link to nvim binary
 sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
