@@ -20,7 +20,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 chmod u+x /home/$USER/nvim/nvim.appimage
 
 # Move appimage to /usr/local/bin
-mv /home/$USER/nvim/nvim.appimage /usr/local/bin/nvim.appimage
+sudo mv /home/$USER/nvim/nvim.appimage /usr/local/bin/nvim.appimage
 
 #Create font directory
 if [! -d "/home/$USER/.local/share/fonts"]; then
