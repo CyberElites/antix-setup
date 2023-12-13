@@ -33,7 +33,7 @@ while true; do
     echo "Do you want to add a specific font to '~/.local/share/fonts'? (yes/no) "
     read answer
 
-    if [ "$answer" = "yes"] || [ "$answer" = "y"]; then
+    if [ "$answer" = "yes" ] || [ "$answer" = "y" ]; then
         #Install Arimo Nerd Font
         curl -o ~/.local/share/fonts/Arimo.zip -L https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Arimo.zip
 
