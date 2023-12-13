@@ -1,19 +1,25 @@
 #!/bin/bash
 
-#--- Setup Nvim and Fonts
+#--- Setup Custom Nvim
 
-#Download necessary commands if not already
+# First, remove Nvim and its dependencies
+sudo apt remove nvim -y
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+
+# Download necessary commands if not already
 sudo apt install curl -y
 sudo apt install npm -y
 
-# Download nvim-linux64.tar.gz from the URL and move it to ~/Downloads
-curl -o ~/Downloads/nvim-linux64.tar.gz -L https://github.com/neovim/neovim/releases/download/v0.9.0/nvim-linux64.tar.gz
+# Download nvim.appimage and NvChad
+curl -O -L https://github.com/neovim/neovim/releases/download/v0.9.4/nvim.appimage
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 
-# Move nvim-linux64.tar.gz to /usr/local/bin
-sudo mv ~/Downloads/nvim-linux64.tar.gz /usr/local/bin
+# Add permissions to nvim.appimage
+chmod u+x nvim.appimage
 
-# Extract the tar.gz file
-sudo tar xzvf /usr/local/bin/nvim-linux64.tar.gz -C /usr/local/bin
+# Move appimage to /usr/local/bin
+mv nvim.appimge /usr/local/bin
 
 #Create font directory
 mkdir ~/.local/share/fonts
@@ -27,32 +33,8 @@ unzip -d ~/.local/share/fonts ~/.local/share/fonts/Arimo.zip
 #Refresh fonts cache
 fc-cache -fv
 
-
-#--- Configure Nvim
-
-
-# Move Vim files to ~/.config
-mv ~/Downloads/nvim ~/.config
-
 # Create a symbolic link to nvim binary
-sudo ln -s /usr/local/bin/nvim-linux64/bin/nvim /usr/local/bin/nvim
+sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
 
-## Manual Steps - By Commands:
-# Linux Commands:
-# 1. nvim ~/.config/nvim/init.lua
-
-# Nvim Commands:
-# 2. :source %
-# 3. :PackerSync
-# 4. :wqa
-
-# Linux Commands:
-# 5. nvim ~/.config/nvim/lua/core/plugin_config/init.lua
-
-# Nvim Commands:
-# 6. :source %
-# 7. :PackerSync
-# 8. :wqa
-
-# Linux Commands:
-# 9. reboot
+# Echo important tips
+echo "\n\nIt would be advised to run nvim and then restart your system afterwards."
