@@ -9,7 +9,7 @@ git clone https://github.com/CyberElites/nvim.git && mv nvim /home/$USER
 
 Go Into Repository and Execute "install_nvim-0-9.sh"
 ```
-cd ~/Downloads/nvim && chmod +x install_nvim-0-9.sh && bash ./install_nvim-0-9.sh
+cd /home/$USER/nvim && chmod +x install_nvim-0-9.sh && bash ./install_nvim-0-9.sh
 ```
 
 Make sure that when the installation is complete, you reboot your system.
