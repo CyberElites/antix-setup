@@ -20,7 +20,7 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
 chmod u+x /home/$USER/nvim/nvim.appimage
 
 # Move appimage to /usr/local/bin
-sudo mv /home/$USER/nvim/nvim.appimage /usr/local/bin/nvim.appimage
+sudo mv /home/$USER/nvim/nvim.appimage /usr/bin/nvim.appimage
 
 #Create font directory
 if [! -d "/home/$USER/.local/share/fonts"]; then
@@ -52,7 +52,7 @@ while true; do
 done
 
 # Create a symbolic link to nvim binary
-sudo ln -s /usr/local/bin/nvim.appimage /usr/local/bin/nvim
+sudo ln -s /usr/bin/nvim.appimage /usr/bin/nvim
 
 # Echo important tips
 echo "It would be advised to run nvim and then restart your system afterwards."
