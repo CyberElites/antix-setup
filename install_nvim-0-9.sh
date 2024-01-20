@@ -22,7 +22,7 @@ chmod u+x /home/$USER/nvim/nvim.appimage
 # Move appimage to /usr/local/bin
 sudo mv /home/$USER/nvim/nvim.appimage /usr/bin/nvim.appimage
 
-#Create font directory
+# Create font directory
 if [ ! -d "/home/$USER/.local/share/fonts" ]; then
     mkdir ~/.local/share/fonts
 fi
