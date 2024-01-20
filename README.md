@@ -12,7 +12,7 @@ Go Into Repository and Execute "install_nvim-0-9.sh"
 cd /home/$USER/nvim && chmod +x install_nvim-0-9.sh && bash ./install_nvim-0-9.sh
 ```
 
-Make sure that when the installation is complete, you reboot your system.
+Make sure that when the installation is complete, you run `nvim` and reboot your system.
 
 ## Contributions
 Thanks to <a href="https://github.com/neovim/neovim/releases/tag/v0.9.4">Neovim v0.9.4</a> for the release.
