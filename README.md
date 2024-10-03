@@ -1,4 +1,4 @@
-## Automatic Configurations for Neovim v0.9.4 - NvChad
+## Automatic Configurations for Antix Linux
 
 **Note,** this installation requires FUSE when installing. If you don't have fuse, follow this <a href="https://github.com/neovim/neovim/releases/tag/v0.9.4">link</a> as this installation process isn't providing the `--appimage-extract` portion.
 
