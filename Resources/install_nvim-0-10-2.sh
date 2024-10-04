@@ -10,7 +10,6 @@ sudo rm nvim # Meant for if you created nvim before
 
 # Download necessary commands if not already
 sudo apt install curl -y
-sudo apt install npm -y
 
 # Download nvim.appimage and NvChad
 curl -O -L https://github.com/neovim/neovim/releases/download/v0.10.2/nvim.appimage
