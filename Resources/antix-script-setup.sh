@@ -52,7 +52,7 @@ sudo update-alternatives --config x-terminal-emulator
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/kitty 50
 
 # Uninstall and remove applications.
-sudo apt remove xterm -y && sudo apt remove roxterm -y && sudo apt remove roxterm-gtk2 -y && sudo apt remove roxterm-common
+sudo apt remove xterm -y && sudo apt remove roxterm -y && sudo apt remove roxterm-gtk2 -y && sudo apt remove roxterm-common -y
 sudo rm /usr/share/applications/terminal.desktop
 
 # Update, upgrade, and autoremove one last time.
