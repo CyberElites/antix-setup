@@ -14,7 +14,7 @@ sudo apt install npm -y
 
 # Download nvim.appimage and NvChad
 curl -O -L https://github.com/neovim/neovim/releases/download/v0.10.2/nvim.appimage
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
+git clone https://github.com/NvChad/starter ~/.config/nvim
 
 # Add permissions to nvim.appimage
 chmod u+x /home/$USER/antix-setup/Resources/nvim.appimage
