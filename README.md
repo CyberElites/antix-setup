@@ -1,21 +1,38 @@
 ## Automatic Configurations for Antix Linux
 
-**Note,** this installation requires FUSE when installing. If you don't have fuse, follow this <a href="https://github.com/neovim/neovim/releases/tag/v0.9.4">link</a> as this installation process isn't providing the `--appimage-extract` portion.
+### Antix Script Setup
 
-Clone Repository to Downloads:
+Clone Repository:
 ```
-git clone https://github.com/CyberElites/nvim.git && mv nvim /home/$USER
-```
-
-Go Into Repository and Execute "install_nvim-0-9.sh"
-```
-cd /home/$USER/nvim && chmod +x install_nvim-0-9.sh && bash ./install_nvim-0-9.sh
+# If you have not already.
+git clone https://github.com/CyberElites/antix-setup.git && mv antix-setup /home/$USER
 ```
 
-Make sure that when the installation is complete, you run `nvim` and reboot your system.
+Run Script to Setup Antix:
+```
+cd /home/$USER/antix-setup/Resources && chmod +x antix-script-setup.sh && bash ./antix-script-setup.sh
+```
 
-## Contributions
-Thanks to <a href="https://github.com/neovim/neovim/releases/tag/v0.9.4">Neovim v0.9.4</a> for the release.
+### NvChad
+
+**Note,** the neovim installation requires FUSE when installing. If you don't have fuse, follow this <a href="https://github.com/neovim/neovim/releases/tag/v0.10.2">link</a> as this installation process isn't providing the `--appimage-extract` portion.
+
+Clone Repository:
+```
+# If you have not already.
+git clone https://github.com/CyberElites/antix-setup.git && mv antix-setup /home/$USER
+```
+
+Run Script to Setup NvChad
+```
+cd /home/$USER/antix-setup/Resources && chmod +x install_nvim-0-10-2.sh && bash ./install_nvim-0-10-2.sh
+```
+
+Make sure that when the installation is complete, you check your system, run `nvim`, and reboot your system.
+
+
+## References
+<a href="https://github.com/neovim/neovim/releases/tag/v0.10.2">Neovim v0.10.2</a>
 <br>
 <br>
-Thanks to <a href="https://nvchad.com/docs/quickstart/install">NvChad</a> for a simple installation of Neovim.
+<a href="https://nvchad.com/docs/quickstart/install">NvChad.</a>
