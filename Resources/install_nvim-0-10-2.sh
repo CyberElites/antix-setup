@@ -17,10 +17,10 @@ curl -O -L https://github.com/neovim/neovim/releases/download/v0.10.2/nvim.appim
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
 
 # Add permissions to nvim.appimage
-chmod u+x /home/$USER/nvim/nvim.appimage
+chmod u+x /home/$USER/antix-setup/Resources/nvim.appimage
 
 # Move appimage to /usr/local/bin
-sudo mv /home/$USER/nvim/nvim.appimage /usr/bin/nvim.appimage
+sudo mv /home/$USER/antix-setup/Resources/nvim.appimage /usr/bin/nvim.appimage
 
 # Create font directory
 if [ ! -d "/home/$USER/.local/share/fonts" ]; then
