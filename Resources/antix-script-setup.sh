@@ -43,9 +43,6 @@ sudo apt update -y
 export TERM=xterm-256color
 source .zshrc
 
-# Get Nvim file and install later.
-curl -O -L https://raw.githubusercontent.com/CyberElites/nvim/refs/heads/main/install_nvim-0-10-1.sh
-
 # Install and setup kitty.
 sudo apt install kitty -y
 sudo update-alternatives --config x-terminal-emulator
