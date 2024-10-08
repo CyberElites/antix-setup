@@ -31,7 +31,7 @@ sudo apt install zsh -y
 chsh -s $(which zsh)
 sudo apt install zsh-autosuggestions -y
 sudo apt install zsh-syntax-highlighting -y
-mkdir /home/$USER/.cargo/bin
+mkdir -p /home/$USER/.cargo/bin
 sudo apt install command-not-found -y
 sudo update-command-not-found
 sudo apt update -y
