@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Move to $USER home.
-cd /home/$USER
-
 # Use aptitude updates and upgrades and have them in vice versa order.
 sudo apt update -y && sudo apt upgrade -y
 sudo apt upgrade -y && sudo apt update -y
@@ -31,16 +28,15 @@ sudo apt upgrade -y && sudo apt update -y
 
 # Install and setup zsh.
 sudo apt install zsh -y
-git clone https://gitbub.com/CyberElites/{.zshrc}
 chsh -s $(which zsh)
 sudo apt install zsh-autosuggestions -y
 sudo apt install zsh-syntax-highlighting -y
-mkdir -p .cargo/bin
-#export PATH=/usr/local/bin:/usr/bin:/usr/local/games:/usr/games:/home/$USER/.cargo/bin:/sbin:/usr/sbin
+mkdir /home/$USER/.cargo/bin
 sudo apt install command-not-found -y
 sudo update-command-not-found
 sudo apt update -y
 export TERM=xterm-256color
+mv /home/$USER/antix-setup/Resources/.zshrc /home/$USER
 source .zshrc
 
 # Install and setup kitty.
