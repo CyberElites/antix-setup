@@ -52,8 +52,5 @@ sudo rm /usr/share/applications/terminal.desktop
 sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y
 
 # Operator comments.
-echo '1. Make "kitty" the default terminal. Control Centre > Edit IceWM Settings'
-echo '2. Run nano /usr/local/bin/desktop-defaults-run and edit the "--terminal" to "kitty.desktop"'
-echo '3. Run nano ~/.icewm/preferences and do TerminalCommand="kitty"'
-echo '4. Run nano ~/.icewm/keys and do key "Ctrl+Alt+t" kitty'
-echo '4. Execute Nvim script.'
+echo '1. Make "kitty" the default terminal. Control Centre > Preferred Applications > Terminal > kitty -- <location>'
+echo '2. Execute Nvim script.'
